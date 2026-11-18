@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waste Dashboard | EcoTrack</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<input type="checkbox" id="nav-toggle" aria-label="Toggle navigation">
+<aside class="sidebar">
+ <a class="brand" href="index.html"><span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7M21 4v5h-5"/></svg></span> EcoTrack</a>
+ <nav aria-label="Main navigation">
+ <a class="nav-link active" aria-current="page" href="index.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12 12 3l9 9M5 10v10h14V10"/></svg> Dashboard</a>
+ <a class="nav-link" href="categories.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Categories &amp; Services</a>
+ <a class="nav-link" href="booking.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg> Pickup Booking</a>
+ <a class="nav-link" href="recycling.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7M21 4v5h-5"/></svg> Recycling &amp; Operations</a>
+ <a class="nav-link" href="insights.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg> AI Insights</a>
+ </nav>
+ <div class="side-note"><strong>Need help?</strong>Helpline 1800-000-123<br>Mon–Sat, 8am–8pm</div>
+</aside>
+<div class="main">
+<header class="topbar">
+ <label class="menu-btn" for="nav-toggle" aria-label="Open menu"><svg class="i" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></label>
+ <form class="search" role="search" action="#"><label class="sr" for="gs" hidden>Search</label><input id="gs" type="search" name="q" placeholder="Search requests, centers, areas…"></form>
+ <div class="topbar-right"><span class="badge info">Zone B</span><div class="user"><span class="avatar">AM</span><div>Anita Mehta<small>Resident</small></div></div></div>
+</header>
+<main class="content">
+<div class="page-head"><div><h1>Waste Dashboard</h1><p>Overview of collection, requests and recycling for your area.</p></div><a class="btn" href="booking.html">Book a pickup</a></div>
+<section class="grid g4" aria-label="Key statistics">
+ <article class="card stat"><span class="stat-icon">♻</span><div><small>Total waste collected</small><b>12.4 t</b><span class="trend">▲ 8% this month</span></div></article>
+ <article class="card stat"><span class="stat-icon warn">⏳</span><div><small>Pending pickup requests</small><b>18</b><span class="trend">5 due today</span></div></article>
+ <article class="card stat"><span class="stat-icon">%</span><div><small>Recycling percentage</small><b>68%</b><span class="trend">▲ 4 pts</span></div></article>
+ <article class="card stat"><span class="stat-icon info">🚚</span><div><small>Next collection</small><b>Thu</b><span class="trend">7:30 am, Zone B</span></div></article>
+</section>
+<section class="grid g21">
+ <article class="card">
+  <div class="card-head"><h2>Collection schedule</h2><a href="booking.html">Manage</a></div>
+  <div class="table-wrap"><table>
+   <thead><tr><th>Day</th><th>Waste type</th><th>Time</th><th>Zone</th><th>Status</th></tr></thead>
+   <tbody>
+    <tr><td>Mon</td><td>Organic</td><td>7:00 am</td><td>Zone A</td><td><span class="badge">Completed</span></td></tr>
+    <tr><td>Wed</td><td>Plastic &amp; Paper</td><td>8:00 am</td><td>Zone B</td><td><span class="badge warn">Today</span></td></tr>
+    <tr><td>Thu</td><td>Glass</td><td>7:30 am</td><td>Zone B</td><td><span class="badge info">Scheduled</span></td></tr>
+    <tr><td>Sat</td><td>Electronic</td><td>10:00 am</td><td>Zone C</td><td><span class="badge info">Scheduled</span></td></tr>
+   </tbody></table></div>
+ </article>
+ <article class="card">
+  <div class="card-head"><h2>Recycling goal</h2></div>
+  <div class="donut" style="--p:68" role="img" aria-label="68 percent recycled"><span>68%</span></div>
+  <p style="text-align:center;margin-top:12px">Target: 75% by December</p>
+ </article>
+</section>
+<section class="grid g2">
+ <article class="card">
+  <div class="card-head"><h2>Segregation tips</h2><a href="categories.html">All categories</a></div>
+  <p class="tip"><b>Rinse containers.</b> Food residue can spoil a whole batch of recyclables.</p>
+  <p class="tip"><b>Keep wet and dry apart.</b> Wet paper cannot be recycled.</p>
+  <p class="tip"><b>Never bin batteries.</b> Hand e-waste to a collection point.</p>
+ </article>
+ <article class="card">
+  <div class="card-head"><h2>Recent activities</h2><a href="recycling.html">View history</a></div>
+  <ul class="list">
+   <li><span class="dot"></span><div>Plastic pickup completed<small>Request #PK-1042 · 2 hours ago</small></div></li>
+   <li><span class="dot"></span><div>Glass pickup scheduled for Thursday<small>Request #PK-1049 · Yesterday</small></div></li>
+   <li><span class="dot"></span><div>E-waste dropped at Green Hub Andheri<small>Certificate issued · 2 days ago</small></div></li>
+   <li><span class="dot"></span><div>Organic pickup rescheduled<small>Request #PK-1037 · 3 days ago</small></div></li>
+  </ul>
+ </article>
+</section>
+</main>
+<footer>© 2026 EcoTrack Municipal Waste Services · Frontend prototype, ready for React and MERN integration.</footer>
+</div>
+</body>
+</html>

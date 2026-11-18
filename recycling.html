@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recycling & Operations | EcoTrack</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<input type="checkbox" id="nav-toggle" aria-label="Toggle navigation">
+<aside class="sidebar">
+ <a class="brand" href="index.html"><span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7M21 4v5h-5"/></svg></span> EcoTrack</a>
+ <nav aria-label="Main navigation">
+ <a class="nav-link" href="index.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12 12 3l9 9M5 10v10h14V10"/></svg> Dashboard</a>
+ <a class="nav-link" href="categories.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Categories &amp; Services</a>
+ <a class="nav-link" href="booking.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg> Pickup Booking</a>
+ <a class="nav-link active" aria-current="page" href="recycling.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7M21 4v5h-5"/></svg> Recycling &amp; Operations</a>
+ <a class="nav-link" href="insights.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg> AI Insights</a>
+ </nav>
+ <div class="side-note"><strong>Need help?</strong>Helpline 1800-000-123<br>Mon–Sat, 8am–8pm</div>
+</aside>
+<div class="main">
+<header class="topbar">
+ <label class="menu-btn" for="nav-toggle" aria-label="Open menu"><svg class="i" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></label>
+ <form class="search" role="search" action="#"><label class="sr" for="gs" hidden>Search</label><input id="gs" type="search" name="q" placeholder="Search requests, centers, areas…"></form>
+ <div class="topbar-right"><span class="badge info">Zone B</span><div class="user"><span class="avatar">AM</span><div>Anita Mehta<small>Resident</small></div></div></div>
+</header>
+<main class="content">
+<div class="page-head"><div><h1>Recycling & Operations</h1><p>Find recycling centers and review your collection records.</p></div><a class="btn" href="booking.html">Book a pickup</a></div>
+<section class="grid g3">
+ <article class="card"><div class="card-head"><h2>Green Hub Andheri</h2><span class="badge">Open</span></div><div class="map">Map</div><p>12 MIDC Road, Andheri East<br>Mon–Sat, 8am–6pm · 022 4000 1101</p><p style="margin:10px 0"><span class="badge info">Plastic</span> <span class="badge info">Paper</span> <span class="badge info">E-waste</span></p><div class="progress" aria-label="Capacity 72%"><i style="width:72%"></i></div><small class="muted">72% capacity used</small></article>
+ <article class="card"><div class="card-head"><h2>EcoCycle Bandra</h2><span class="badge">Open</span></div><div class="map">Map</div><p>8 Hill Road, Bandra West<br>Mon–Sun, 7am–7pm · 022 4000 1102</p><p style="margin:10px 0"><span class="badge info">Glass</span> <span class="badge info">Plastic</span> <span class="badge info">Organic</span></p><div class="progress" aria-label="Capacity 45%"><i style="width:45%"></i></div><small class="muted">45% capacity used</small></article>
+ <article class="card"><div class="card-head"><h2>Renew Point Borivali</h2><span class="badge warn">Closes 4pm</span></div><div class="map">Map</div><p>5 SV Road, Borivali West<br>Mon–Fri, 9am–4pm · 022 4000 1103</p><p style="margin:10px 0"><span class="badge info">Paper</span> <span class="badge info">E-waste</span></p><div class="progress" aria-label="Capacity 91%"><i style="width:91%"></i></div><small class="muted">91% capacity used</small></article>
+</section>
+<section class="card">
+ <div class="card-head"><h2>Household collection history</h2><div class="chips"><span class="chip on">All</span><span class="chip">Completed</span><span class="chip">Pending</span><span class="chip">Missed</span></div></div>
+ <div class="table-wrap"><table>
+  <thead><tr><th>Record</th><th>Date</th><th>Waste type</th><th>Weight</th><th>Collector</th><th>Status</th></tr></thead>
+  <tbody>
+   <tr><td>CR-5521</td><td>16 Nov 2026</td><td>Plastic</td><td>6.2 kg</td><td>Ravi K.</td><td><span class="badge">Completed</span></td></tr>
+   <tr><td>CR-5498</td><td>12 Nov 2026</td><td>Organic</td><td>9.8 kg</td><td>Sana P.</td><td><span class="badge">Completed</span></td></tr>
+   <tr><td>CR-5470</td><td>09 Nov 2026</td><td>Paper</td><td>4.5 kg</td><td>Ravi K.</td><td><span class="badge">Completed</span></td></tr>
+   <tr><td>CR-5455</td><td>05 Nov 2026</td><td>Glass</td><td>—</td><td>Unassigned</td><td><span class="badge warn">Pending</span></td></tr>
+   <tr><td>CR-5431</td><td>01 Nov 2026</td><td>Electronic</td><td>—</td><td>Sana P.</td><td><span class="badge bad">Missed</span></td></tr>
+  </tbody></table></div>
+</section>
+</main>
+<footer>© 2026 EcoTrack Municipal Waste Services · Frontend prototype, ready for React and MERN integration.</footer>
+</div>
+</body>
+</html>
